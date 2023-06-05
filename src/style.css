@@ -1,0 +1,109 @@
+body {
+  font-family: "Lora", serif !important;
+}
+
+/* Partie 1: Header */
+/* Styles du header */
+header {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Styles de l'encart du menu */
+.menu-encart-cadre {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  padding: 2% 5% 2% 5%;
+  border: 2px solid #d0cdc2;
+  background-color: white;
+  overflow: hidden; /* Masquer le contenu débordant */
+  width: calc(
+    80vw - 20px
+  ); /* Définir une largeur en fonction de la largeur de la fenêtre moins les marges */
+  max-width: 400px; /* Définir une largeur maximale pour l'encart */
+}
+
+/* Style du texte dans l'encart */
+.menu-encart-texte {
+  font-size: calc(
+    2vw + 50%
+  ); /* Définir une taille de police en fonction de la largeur de la fenêtre */
+  text-align: center;
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  text-overflow: ellipsis; /* Afficher les points de suspension (...) si le texte dépasse */
+}
+
+
+/* Partie 2: Formulaire */
+.reservation-form {
+  margin: 5% 5% 2% 5%;
+}
+
+.form-group {
+  margin-bottom: 15%;
+  text-align: center;
+  margin: 5% 5% 2% 5%;
+}
+
+/* Style personnalisé pour le fond des inputs */
+input[type="number"].form-control {
+  background-color: #d0cdc2; /* Remplacez cette couleur par celle de votre choix */
+}
+
+.send-button {
+  background-color: #A9B19D !important;
+}
+
+.clear-button {
+  background-color: #B34B4B !important;
+}
+
+
+
+/* Partie 3: Calendrier */
+/* Style du calendrier */
+.container {
+  border-radius: 10px;
+  padding: 2% 5% 2% 5%;
+  background-color: #735e5d;
+  margin: 2% 5% 2% 5%;
+}
+
+.calendar {
+  border: 2px solid #d0cdc2;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2% 5% 2% 5%;
+  padding: 2%;
+}
+
+.day-of-week {
+  text-align: center;
+  color: #735e5d;
+}
+
+.day-name {
+  font-weight: bold;
+}
+
+.month {
+  font-size: 0.8em;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.time-slots button {
+  margin: 5px;
+}
